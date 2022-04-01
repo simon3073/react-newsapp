@@ -16,9 +16,10 @@ const NewsList = () => {
 
 	return (
 		<div>
-			{articles.map((articles) => {
+			aaaa
+			{/* {articles.map((articles) => {
 				return <NewsItem title={articles.title} description={articles.description} url={articles.url} urlToImage={articles.urlToImage} />;
-			})}
+			})} */}
 		</div>
 	);
 };
