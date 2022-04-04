@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('../../node_modules/font-awesome/css/font-awesome.min.css');
+
 $button-color: #4b8fe2;
 $button-color-border: darken($button-color, 20%);
 
@@ -37,9 +39,13 @@ body {
 	text-align: center;
 }
 
+h4 {
+	text-align: center;
+}
+
 .header {
 	background-color: #16427f;
-	padding: 10px 20px 30px;
+	padding: 10px 20px 20px;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -47,45 +53,51 @@ body {
 	gap: 10px;
 
 	h2 {
-		margin: 20px 0 10px;
+		margin: 20px 0 15px;
 	}
-	input {
-		box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-		border: 0;
-		border-radius: 50px;
-		color: #000;
-		font-size: 14px;
-		padding: 10px 15px;
-		width: 90%;
-		margin-bottom: 10px;
+
+	.search {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		input {
+			box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+			border: 0;
+			border-radius: 50px;
+			color: #000;
+			font-size: 14px;
+			padding: 10px 15px;
+			width: 85%;
+			height: 100%;
+			margin-bottom: 10px;
+			transition: box-shadow linear 0.2s, width 500ms ease;
+		}
+
+		input:focus {
+			outline: none;
+			border-color: #9ecaed;
+			box-shadow: 0 0 10px #9ecaed;
+			width: 90%;
+		}
+
+		button {
+			padding: 10px 20px;
+			font-weight: 500;
+			height: 42px;
+			color: #000;
+			background-color: $button-color;
+			border: none;
+			border-radius: 0px 45px 45px 0px;
+			transition: all 0.3s ease 0s;
+			cursor: pointer;
+			outline: none;
+			margin: -0 0 0 -53px;
+		}
+
+		button:hover {
+			background-color: $button-color-border;
+			color: #fff;
+		}
 	}
-	input:focus {
-		outline: none;
-	}
-}
-
-button {
-	padding: 10px 20px;
-	text-transform: uppercase;
-	font-weight: 500;
-	color: #000;
-	background-color: $button-color;
-	border: none;
-	border-radius: 45px;
-	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-	transition: all 0.3s ease 0s;
-	cursor: pointer;
-	outline: none;
-	margin: 10px;
-}
-
-button:hover {
-	background-color: $button-color-border;
-	box-shadow: 0px 5px 5px $button-color;
-	color: #fff;
-	transform: translateY(-2px);
-}
-
-button:active {
-	transform: translateY(-1px);
 }

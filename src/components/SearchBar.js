@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const SearchBar = (props) => {
 	let textInput = React.createRef();
@@ -16,8 +16,12 @@ const SearchBar = (props) => {
 	return (
 		<header className="header">
 			<h2 className="title">Search The News</h2>
-			<input ref={textInput} type="text" id="search" placeholder="What do you need to know??" onKeyUp={handleKeyPress} />
-			<button onClick={handleClick}>Search for news</button>
+			<div className="search">
+				<input ref={textInput} type="text" id="search" placeholder="What do you need to know??" onKeyUp={handleKeyPress} />
+				<button type="submit" className="search_button" onClick={handleClick}>
+					<i class="fa fa-search"></i>
+				</button>
+			</div>
 		</header>
 	);
 };
