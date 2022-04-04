@@ -17,6 +17,7 @@ const NewsList = (props) => {
 
 	return (
 		<div>
+			<h4>News about {props.searchTerm}</h4>
 			{/* {articles.map((articles) => {
 				return <NewsItem title={articles.title} description={articles.description} url={articles.url} urlToImage={articles.urlToImage} />;
 			})} */}
