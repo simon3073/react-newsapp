@@ -3,7 +3,7 @@ import NewsList from './components/NewsList';
 import SearchBar from './components/SearchBar';
 
 function App() {
-	const [searchTerm, setSearchTerm] = useState('ukraine');
+	const [searchTerm, setSearchTerm] = useState('');
 
 	const handleSubmit = (passedSearchTerm) => {
 		setSearchTerm(passedSearchTerm);
@@ -11,7 +11,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<SearchBar buttonClick={handleSubmit} />
+			<SearchBar submitSearch={handleSubmit} />
 			<NewsList searchTerm={searchTerm} />
 		</div>
 	);

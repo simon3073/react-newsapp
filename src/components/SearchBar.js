@@ -4,12 +4,12 @@ const SearchBar = (props) => {
 	let textInput = React.createRef();
 
 	function handleClick() {
-		props.buttonClick(textInput.current.value);
+		props.submitSearch(textInput.current.value);
 	}
 
 	const handleKeyPress = (e) => {
 		if (e.key === 'Enter') {
-			props.buttonClick(textInput.current.value);
+			props.submitSearch(textInput.current.value);
 		}
 	};
 
@@ -19,7 +19,7 @@ const SearchBar = (props) => {
 			<div className="search">
 				<input ref={textInput} type="text" id="search" placeholder="What do you need to know??" onKeyUp={handleKeyPress} />
 				<button type="submit" className="search_button" onClick={handleClick}>
-					<i class="fa fa-search"></i>
+					<i className="fa fa-search"></i>
 				</button>
 			</div>
 		</header>

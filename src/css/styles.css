@@ -48,6 +48,11 @@ body {
 
 h4 {
   text-align: center;
+  text-decoration: underline;
+}
+
+h4 .uppercase {
+  text-transform: uppercase;
 }
 
 .header {
@@ -124,5 +129,45 @@ h4 {
 .header .search button:hover {
   background-color: #1c5cab;
   color: #fff;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.news-articles {
+  margin: 0 auto;
+  overflow-y: auto;
+  height: 72vh;
+}
+
+.news-articles h3 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.news-articles h4 {
+  margin-bottom: 10px;
+}
+
+.news-articles .news-app {
+  padding: 20px 20px 5px 20px;
+}
+
+.news-articles .news-app:nth-child(odd) {
+  background-color: #e5e5e5;
+}
+
+.news-articles .news-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.news-articles .news-item h3 {
+  margin: 10px 0;
 }
 /*# sourceMappingURL=styles.css.map */
