@@ -28,6 +28,11 @@ body {
 	box-shadow: 12px 12px 24px #3f7ac0, -12px -12px 24px #55a6ff;
 	overflow: hidden;
 	width: 50%;
+
+	@media (max-width: 575.98px) {
+		height: 90%;
+		width: 90%;
+	}
 }
 
 .App {
@@ -123,6 +128,9 @@ h4 {
 	h3 {
 		text-align: center;
 		margin-top: 60px;
+		@media (max-width: 575.98px) {
+			font-size: 1em;
+		}
 	}
 
 	h4 {
