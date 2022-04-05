@@ -41,6 +41,11 @@ body {
 
 h4 {
 	text-align: center;
+	text-decoration: underline;
+
+	.uppercase {
+		text-transform: uppercase;
+	}
 }
 
 .header {
@@ -98,6 +103,48 @@ h4 {
 		button:hover {
 			background-color: $button-color-border;
 			color: #fff;
+		}
+	}
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.news-articles {
+	margin: 0 auto;
+	overflow-y: auto;
+	height: 72vh;
+
+	h3 {
+		text-align: center;
+		margin-top: 60px;
+	}
+
+	h4 {
+		margin-bottom: 10px;
+	}
+
+	.news-app {
+		padding: 20px 20px 5px 20px;
+	}
+
+	.news-app:nth-child(odd) {
+		background-color: rgb(229, 229, 229);
+	}
+
+	.news-item {
+		img {
+			width: 100%;
+			border-radius: 10px;
+		}
+
+		h3 {
+			margin: 10px 0;
 		}
 	}
 }
