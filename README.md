@@ -4,7 +4,7 @@
 
 <br>
 
-https://simon3073.github.io/angular_movie_api_client/
+https://simon3073-newsapp.netlify.app/
 
 
 
